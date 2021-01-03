@@ -27,4 +27,38 @@
 - Remove all clusters
     `minikube delate --all`
 
+## kubectl commands
+
+- Get all pods
+    `kubectl get pods`
+
+- Get single pod
+    `kubectl get pods <pod-name>`
+
+- Describe pod
+    `kubectl describe pod <pod-name>`
+
+- Expose Deployment
+    `kubectl expose deployment <deployment-name> <-port=external-port> <-target-port=container-port> <-type=service-type>`
+
+- Port Forward
+    `kubectl port-forward <pod-name> <local-port>:<remote-port>`
+
+- Attach pod 
+    `kubectl attach <pod-name> -c <container>`
+
+- Execute command within deployment pod, get prompt within pod
+    `kubectl exec -it <pod-name> bash`
+    Exit from propmt `exit`
+
+- Label pod
+    `kubectl label pods <pod-name> KEY_1=VAL_1`
+
+- Run Image
+    `kubectl run <name> --image=<image-name> --port=<port-number>`
+
+- Reference
+    `https://minikube.sigs.k8s.io/docs/start/`
+
+
 
