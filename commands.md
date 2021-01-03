@@ -50,7 +50,7 @@
 - Execute command within deployment pod, get prompt within pod
     `kubectl exec -it <pod-name> bash`
     
-- Exit from propmt `exit`
+- Exit from execute prompt `exit`
 
 - Label pod
     `kubectl label pods <pod-name> KEY_1=VAL_1`
