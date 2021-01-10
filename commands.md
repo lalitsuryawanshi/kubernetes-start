@@ -51,6 +51,12 @@
 
 ## kubectl commands
 
+- Get nodes
+  `kubectl get nodes`
+
+- Label node
+    `kubectl label node <nodename> <label-name>=<label-value>`
+
 - Get all pods
     `kubectl get pods`
 
