@@ -87,6 +87,16 @@
 - Run Image
     `kubectl run <name> --image=<image-name> --port=<port-number>`
 
+- Run Proxy
+    `kubectl proxy`
+
+- Kubernetes Dashboard
+    `minikube dashboard` (use locally)
+    `http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy`
+
+- If the dashboard is not installed, get it here
+    `kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml`
+
 ### kubectl scale
 
 - Scale Deployment
