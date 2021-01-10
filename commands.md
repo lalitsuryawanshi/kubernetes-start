@@ -47,7 +47,7 @@
     `minikube stop`
 
 - Remove all clusters
-    `minikube delate --all`
+    `minikube delete --all`
 
 ## kubectl commands
 
@@ -102,6 +102,23 @@
 - Scale Deployment
     `kubectl scale --replicas=4 deployment/tomcat-deployment`
 
+### Create and Scale New Deploment
+
+- Start minikube
+    `minikube start`
+
+- Define deployment
+    `kubectl create deployment mongo-test1 --image=mongo --port=27017`
+
+- Start Dashboard
+    `minikube dashboard`
+
+- Scale Deployment to 4 pods
+    `kubectl scale deployment --replicas=4 mongo-test1`
+
+- Confirm that 4 pods are running
+    `kubectl get pods`
+    `kubectl describe deployment mongo-test1`
 
 
 
