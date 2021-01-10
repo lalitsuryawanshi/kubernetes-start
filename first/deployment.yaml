@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: tomcat:9.0
+        image: tomcat:9.0.1
         ports:
         - containerPort: 8080
-        livelinessProbe:
+        livenessProbe:
           httpGet:
             path: /
             port: 8080
